@@ -1,0 +1,74 @@
+html {
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(202, 208, 209, 0.8); 
+    color: rgb(70,70,70);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h3, .year {
+    color: rgb(26, 34, 63);
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.6rem;
+    font-weight: lighter;
+}
+
+ul {
+    font-weight: lighter;
+    font-size: 1.5rem;
+    padding: 0 20%;
+    text-align: left;
+    line-height: 150%;
+}
+
+li {
+    margin-top: 2%;
+}
+
+#img-div {
+    margin: 2% 10%;
+    padding: 2% 5%;
+    background-color: white;
+}
+
+#image { 
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: auto;
+}
+
+#img-caption {
+    font-size: 1.3rem;
+    font-weight: lighter;
+    margin-top: 1%;
+}
+
+#quote {
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 1.4rem;
+    text-align: justify;
+    font-size: 1.5rem;
+    padding: 0 30%;
+    line-height: 150%;
+    margin-top: 2%;
+}
+
+#link {
+    margin: 2% 10%;
+}
+        

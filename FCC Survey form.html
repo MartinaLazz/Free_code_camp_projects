@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: white;
+        }
+        body::after {
+            content: "";
+            background: url("https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: scroll;
+            opacity: 0.7;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            position: absolute;
+            z-index: -1;   
+            }
+        h1 {
+            text-align: center;
+        }
+        p {
+            text-align: center;
+            font-style: italic;
+        }
+        form {
+            background: rgba(22, 10, 101, 0.7);
+            margin-left: 20%;
+            margin-right: 20%;
+            margin-top: 2%;
+            border-radius: 1%;
+            padding-top: 20px;
+        }
+        label {
+            margin-top: 50%;
+            font-weight: 500;
+            padding-left: 10%;
+        }
+        .box {
+            width: 80%;
+            margin-left: 10%;
+            margin-right: 10%;
+            border-radius: 2%;
+            }
+        .options {
+            margin-left: 10%;
+        }
+        .optionslabel {
+            padding-left: 1%;
+        }
+        #textarea {
+            height: 100px;
+            }
+        
+        #submitbutton {
+            width: 81%;
+            height: 30px;
+            margin-left: 10%;
+            margin-right: 10%;
+            border-radius: 2%;
+            background: rgb(12, 152, 84);
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+        <label for="name" id="name-label">Name</label><br>
+        <input type="text" class="box" id="name" placeholder="Enter your name" required><br><br>
+
+        <label for="email" id="email-label">Email</label><br>
+        <input type="email" class="box" id="email" placeholder="Enter your Email" required><br><br>
+
+        <label for="number" id="number-label">Age (optional)</label><br>
+        <input type="number" class="box" id="number" placeholder="Age" min="10" max="99"><br><br>
+
+        <label for="role" id="role-label">Which option best describes your current role?</label><br>
+        <select name="role" id="role" class="box" required>
+            <option value="" selected disabled>Select current role</option>
+            <option value="student">Student</option>
+            <option value="full time job">Full time job</option>
+            <option value="full time learner">Full time learner</option>
+            <option value="prefer not to say">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select><br><br>
+
+          <label for="recommendation" id="recom-label">Would you recommend freeCodeCamp to a friend?</label><br>
+          <input type="radio" value="definitely" name="recommendation" class="options" checked><label class="optionslabel">Definitely</label><br>
+          <input type="radio" value="maybe" name="recommendation" class="options"><label class="optionslabel">Maybe</label><br>
+          <input type="radio" value="not sure" name="recommendation" class="options"><label class="optionslabel">Not sure</label><br><br>
+
+          <label for="dropdown" id="favorite-label">What is your favorite feature of freeCodeCamp?</label><br>
+          <select name="favorite" id="dropdown" class="box" required>
+            <option value="" selected disabled>Select an option</option>
+            <option value="challenges">Challenges</option>
+            <option value="projects">Projects</option>
+            <option value="community">Community</option>
+            <option value="open source">Open source</option>
+          </select><br><br>
+
+          <label for="improved" id="improved-label">What would you like to see improved? (Check all that apply)</label><br>
+          <input type="checkbox" value="front-end projects" name="improved" class="options"><label class="optionslabel">Front-end Projects</label><br>
+          <input type="checkbox" value="back-end projects" name="improved" class="options"><label class="optionslabel">Back-end Projects</label><br>
+          <input type="checkbox" value="data visualization" name="improved" class="options"><label class="optionslabel">Data Visualization</label><br>
+          <input type="checkbox" value="challenges" name="improved" class="options"><label class="optionslabel">Challenges</label><br>
+          <input type="checkbox" value="open source community" name="improved" class="options"><label class="optionslabel">Open Source Community</label><br>
+          <input type="checkbox" value="gitter help rooms" name="improved" class="options"><label class="optionslabel">Gitter help rooms</label><br>
+          <input type="checkbox" value="videos" name="improved" class="options"><label class="optionslabel">Videos</label><br>
+          <input type="checkbox" value="city meetups" name="improved" class="options"><label class="optionslabel">City Meetups</label><br>
+          <input type="checkbox" value="wiki" name="improved" class="options"><label class="optionslabel">Wiki</label><br>
+          <input type="checkbox" value="forum" name="improved" class="options"><label class="optionslabel">Forum</label><br>
+          <input type="checkbox" value="additional courses" name="improved" class="options"><label class="optionslabel">Additional Courses</label><br><br>
+
+          <label for="textarea" id="suggestions-label">Any comments or suggestions?</label><br>
+          <textarea id="textarea" class="box">Enter your comment here...</textarea><br><br>
+
+          <button type="submit" id="submitbutton">Submit</button><br><br>      
+    </form>
+</body>
+</html>

@@ -1,0 +1,70 @@
+html {
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(202, 208, 209, 0.8); 
+    color: rgb(70,70,70);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+main {
+            font-family: Calibri;
+            color: #4D4D4B;   
+            font-size: 1.1em;
+            padding-left: 22%;         
+        }
+        header {
+            color: black;
+            font-size: 1.5em;
+        }
+        li {
+            padding-top: 0.5em;
+        }
+        code {
+            display: inline-block;
+            border-radius: 1%;
+            margin-left: 5%;
+            margin-right: 5%;
+            width: 90%;
+            height: 2em;
+            padding: 1.5em;
+            background: #EDEDE7;
+            font-size: 0.9em;       
+        }
+        .nav-link {
+            font-family: Calibri;
+            color: #4D4D4B;   
+            font-size: 1.1em;
+            text-decoration: none;
+            padding-left: 1em;
+            padding-top: 0.5em;
+        }
+        #header-nav {
+            padding-left: 1em;
+            padding-top: 0.5em;
+
+        }
+        nav {
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            }
+    
+        @media screen and (max-width: 768px) {
+                                               nav {
+                                                   float:none; 
+                                                   height:200px; 
+                                                   width:100%}
+                                              }     
